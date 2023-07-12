@@ -1,0 +1,50 @@
+{
+  "name": "full-stack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test && jest",
+    "build": "cross-env NODE_ENV=development && tsc",
+    "start": "cross-env NODE_ENV=development && ts-node src/index.ts",
+    "dev": "cross-env NODE_ENV=development && ts-node-dev --respawn ./src/index.ts",
+    "debug": "cross-env NODE_ENV=development && ts-node-dev --respawn --inspect=5858 ./src/index.ts",
+    "swagger:edit": "swagger project edit",
+    "typeorm:win": "ts-node --transpile-only ./node_modules/typeorm/cli.js"
+  },
+  "keywords": [],
+  "author": "Sheryar Babar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "node-pg-migrate": "^6.0.0",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.2",
+    "supertest": "^6.1.3",
+    "ts-node": "^10.0.0",
+    "typeorm": "^0.2.33",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/express": "^4.17.12",
+    "@types/faker": "^5.5.6",
+    "@types/jest": "^26.0.23",
+    "@types/supertest": "^2.0.11",
+    "chai": "^4.3.4",
+    "faker": "^5.5.3",
+    "jest": "^27.0.4",
+    "lodash": "^4.17.21",
+    "prettier": "^2.3.0",
+    "ts-jest": "^27.0.3",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0"
+  }
+}
