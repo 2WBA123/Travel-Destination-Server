@@ -1,7 +1,9 @@
 import { Router } from 'express';
-import { TodoTaskRouter } from './api/task/task.routes';
+import { authRouter } from './api/Auth/auth.routes';
+import { roleRouter } from './api/role/role.routes';
 
 const apiRouter = Router();
-apiRouter.use('/awesome/applicant', TodoTaskRouter)
+apiRouter.use('/auth', authRouter)
+apiRouter.use('/role', roleRouter)
 
 export { apiRouter };
