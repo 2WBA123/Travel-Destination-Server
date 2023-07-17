@@ -12,12 +12,8 @@ import { Permission } from './permission.entity';
 import { TimestampColumns } from './timestamp-columns';
 
 export enum UserRole {
-  dev = 'dev',
-  pm = 'pm',
-  sales = 'sales',
-  hr = 'hr',
+  user = 'user',
   admin = 'admin',
-  account = 'account',
   super = 'super',
 }
 
